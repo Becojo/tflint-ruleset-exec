@@ -1,0 +1,3 @@
+plugin "exec" {
+  enabled = true
+}

@@ -1,11 +1,11 @@
 default: build
 
 test:
-	go test ./...
+	$(shell which go) test ./...
 
 build:
-	go build
+	$(shell which go) build
 
 install: build
 	mkdir -p ~/.tflint.d/plugins
-	mv ./tflint-ruleset-template ~/.tflint.d/plugins
+	mv ./tflint-ruleset-exec ~/.tflint.d/plugins
